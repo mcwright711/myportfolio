@@ -1,12 +1,30 @@
-header{
+header {
+   padding: 80px;
    height: 200px;
-    background-color: rgb(116, 112, 112)
- }
- .main{
-   height:400px;
+   background-color: rgb(116, 112, 112);
+   font-size: x-large;
+  font-family: 'Raleway Medium';
+  text-align: right;
+   }
+
+ .main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
     background-color: white;
+    margin-top:100px;
  }
- footer{
+ footer {
    height: 200px;
     background-color: rgb(184, 61, 184);
+ }
+
+ *,
+ *::before,
+ *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ .bio {
+   padding: 5%;
  }
