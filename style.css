@@ -4,7 +4,6 @@ header {
    background-color: rgb(116, 112, 112);
    font-size: x-large;
   font-family: 'Raleway Medium';
-  text-align: right;
    }
 
  .main {
@@ -28,3 +27,25 @@ header {
  .bio {
    padding: 5%;
  }
+
+ .nav {
+   padding: 15px 30 px; 
+   box-align: left;
+ }
+ #row{
+   justify-content: flex-start;
+ }
+
+ .nav a: hover {
+background color: white;
+ }
+
+ .nav a {
+   text-decoration: none;
+   font-family: 'Raleway';
+ }
+ .block {
+   text-align: start;
+
+ }
+ 
