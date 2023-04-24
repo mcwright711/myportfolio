@@ -73,13 +73,14 @@ section{
   height: 400px;
   font-family: 'Raleway Medium';
  width: 100%;
- justify-content: space-around;
+ justify-content: center;
  }
 
 .item{
   width: fit-content;
   background-color: rgb(116, 112, 112);
   padding: 15px;
+  margin: 30px;
   margin-bottom: 10px;
   align-items: center;
   text-align: center;
