@@ -24,46 +24,46 @@ width: 100%;
 .button{
   border-radius: 50px;
   border-width: normal;
-  padding: 5px;
+  padding: 10px;
   width: fit-content;
   font-family: 'Raleway';
   align-self: center;
+  margin-top: 15px;
  }
+
 .button:hover{
   background-color: yellow;
   font-weight: bolder;
+  
 }
  .main {
-   display: grid;
-   background-color:rgb(184, 61, 184);
-   grid-template-rows:1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   background-color: white;
+   display:flex;
    margin-top:100px;
-  
+   justify-content: space-around;
+   align-items: center;
  }
- #headshot{
-  grid-column: 2 / 3;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+ .headshot{
+  height: 50%;
+  width: 50%;
+  padding: 20px;
+
  }
 
- #bio{
-  padding-top: 60px;
-  display: flex;
+ .bio{
+  padding: 60px;
   flex-direction: column;
   text-align: center;
   align-content: center;
   font-family: 'Raleway';
   background-color: rgb(184, 61, 184);
+  border-radius: 10%;
  }
 
 section{
   text-align: center;
   padding-top: 100px;
   font-family: 'Raleway Medium';
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
  .container{
@@ -80,9 +80,10 @@ section{
   width: fit-content;
   background-color: rgb(116, 112, 112);
   padding: 15px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   align-items: center;
   text-align: center;
+  border-radius: 10%; 
 }
 
 #name{
@@ -96,7 +97,7 @@ section{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: xx-large;
     font-weight: bold;
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 1;
 }
 #group{
