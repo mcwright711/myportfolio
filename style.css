@@ -87,9 +87,12 @@ section{
   border-radius: 10%; 
 }
 
-#name{
+.name{
   grid-column: 4;
-  z-index: 2;}
+  z-index: 2;
+  font-size: xxlarge; 
+}
+
 
  footer {
    height: 200px;
