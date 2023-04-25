@@ -12,12 +12,13 @@ header {
 display: flex;
 padding-right: 70%;
 padding-left: 50px;
+padding-top: 50px; 
 align-items: baseline;
 justify-content: space-around;
 font-size:x-large;
 font-family: 'Raleway light';
 position: fixed;
-top:210px; left: 0;
+top:0; left: 0; bottom: 200px;
 width: 100%;
 }
 
@@ -39,13 +40,14 @@ width: 100%;
  .main {
    display:flex;
    margin-top:100px;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
+   
  }
  .headshot{
-  height: 50%;
-  width: 50%;
-  padding: 20px;
+  height: 40%;
+  width: 40%;
+  margin-right: 50px;
 
  }
 
@@ -57,13 +59,14 @@ width: 100%;
   font-family: 'Raleway';
   background-color: rgb(184, 61, 184);
   border-radius: 10%;
+  margin-left: 50px;
  }
 
 section{
   text-align: center;
   padding-top: 100px;
   font-family: 'Raleway Medium';
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
  .container{
@@ -79,20 +82,15 @@ section{
 .item{
   width: fit-content;
   background-color: rgb(116, 112, 112);
-  padding: 15px;
-  margin: 30px;
-  margin-bottom: 10px;
-  align-items: center;
+  padding: 30px;
+  margin: 50px;
+  margin-bottom: 50px;
   text-align: center;
   border-radius: 10%; 
 }
-
-.name{
-  grid-column: 4;
-  z-index: 2;
-  font-size: xxlarge; 
+.text{
+  padding-top: 20px;
 }
-
 
  footer {
    height: 200px;
@@ -106,12 +104,18 @@ section{
 }
 #group{
 grid-column: 2;
+padding-top: 20px;
+
 }
 #sitting{
   grid-column: 3;
+  padding-top: 20px;
 }
+
 #cuphead{
-  grid-column: 4;}
+  grid-column: 4;
+  padding-top: 20px;
+}
 
 /*img{
   opacity: 0.8;
