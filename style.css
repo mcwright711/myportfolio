@@ -3,21 +3,29 @@ header {
    height: 200px;
    background-color: rgb(116, 112, 112);
    /*font-size: xx-large;
-   font-family: 'Raleway Medium';
+   font-family: 'Raleway Medium,' 'sans serif'; 
    text-align: right;
    font-weight: bold;*/
    }
-
-.nav{
+/*.nav{
+  display:flex;
+  flex-direction:row;
+  align-items: left;
+  padding: 10px;
+  justify-content:flex-start;
+  height: 100px;
+}*/
+.ulnav{
 height: 100px;
 display: flex;
-/*padding-left: 50%;*/
-padding-right: 50%;
+flex-direction: row;
+/*padding-left: 30px;
+padding-right: 50%;*/
 align-items: center;
 padding-top: 20px;
 /*text-align: right;
 align-items: right;*/
-justify-content: space-between;
+justify-content: space-around;
 font-size:x-large;
 font-family: 'Raleway light';
 position: fixed;
@@ -25,6 +33,12 @@ top:0; left: 0; bottom: 0px;
 width: 100%;
 /*background-color: white;*/
 }
+@media only screen and (max width: 600px){
+.ulnav{
+  
+}
+}
+
 
 .button{
   border-radius: 50px;
@@ -75,7 +89,6 @@ width: 100%;
   height: 40%;
   width: 40%;
   margin-right: 50px;
-
  }
 
  .bio{
