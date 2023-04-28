@@ -65,7 +65,7 @@ color: black;
 }
 /*Hide the link that should open and close the ulnav on small screens*/
 @media screen and (min-width:601px){
-  .ulnav a.icon: {display: none;}
+  .ulnav a.icon {display: none;}
 }
 
 /*all links should hide at 600px or less*/
@@ -79,12 +79,12 @@ color: black;
   /*"responsive" class added to ulnav with js when user clicks on icon. Should display vertically*/
 @media screen and (max-width: 600px){
   /*.ulnav.responsive{position: relative;}*/
-  .ulnav.responsive a.icon{
+  .ulnav a.responsive.icon{
   position: absolute;
   right: 0;
   top: 0;
   }
-  .ulnav.responsive a{
+  .ulnav a.responsive{
     float: none;
     width: 100%;
     display: block;
