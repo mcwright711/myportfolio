@@ -39,10 +39,12 @@ background-color:rgb(116, 112, 112);
 /*text-decoration: none;*/
 /*background-color: white;*/
 z-index: 100;
-transition: background-color 0.3 s ease-in-out;
+/*transition: background-color ease;*/
+
 }
 .ulnav.scrolled {
   background-color: white;
+  /*transition: background-color 0.1s ease-in-out;*/
 }
 .ulnav a {
   overflow: hidden;
@@ -57,14 +59,11 @@ color: black;
   color:black;
   font-weight: bolder;
 }
-/*active class to highlight the current page*/
+  /*active class to highlight the current page*/
 .ulnav a.active{
   background-color: white;
   color: black;}
-  
-.ulnav a.icon{
-  display:none;
-}
+
 /*Hide the link that should open and close the ulnav on small screens*/
 @media screen and (min-width:601px){
   .ulnav a.icon {display: none;}
@@ -74,8 +73,13 @@ color: black;
 @media screen and (max-width: 600px){
   .ulnav a {display:none;}
   .ulnav a.icon{
+   /*align-self: right;
+   justify-content: right;
+   display: inline-block;
+   position: fixed;*/
    float: right;
    display: block;
+   
   }
   body{
     display: grid;
@@ -101,22 +105,22 @@ color: black;
     grid-column: 1fr;
     justify-items: center;
   }
-}
-  /*"responsive" class added to ulnav with js when user clicks on icon. Should display vertically*/
-@media screen and (max-width: 600px){
-  /*.ulnav.responsive{position: relative;}*/
-  .ulnav a.responsive.icon{
-  position: absolute;
-  right: 0;
-  top: 0;
-  }
+ 
   .ulnav a.responsive{
-    float: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    float: vertical;
     width: 100%;
     display: block;
     text-align: left;
-  }
-}
+    justify-content: left;
+
+    }
+    .ulnav a.responsive:hover{
+      background-color: white;
+      color: black;}
+    }
+
 .button {
   border-radius: 50px;
   border-width: normal;
