@@ -81,7 +81,7 @@ color: black;
    display: block;
    
   }
-  body{
+  /*body*/.main{
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -90,15 +90,20 @@ color: black;
     grid-column: 1fr;
     justify-items: center;
   }
+  section{
+    align-content: center;
+  }
   .bio{
-    align-items: center;
+    /*align-items: center;
     grid-column: 1fr;
-    justify-items: center;
+    justify-items: center;*/
+    align-content: center;
   }
   .container{
-    align-items: center;
+    /*align-items: center;
     grid-column: 1fr;
-    justify-items: center;
+    justify-items: center;*/
+    align-content: center;
   }
   footer{
     align-items: center;
